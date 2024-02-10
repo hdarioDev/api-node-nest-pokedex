@@ -28,7 +28,8 @@ export class PokemonService {
   }
 
   findAll() {
-    return `This action returns all pokemon`;
+    const pokemons = this.pokemonModel.find();
+    return pokemons;
   }
 
   async findOne(term: string) {
